@@ -43,7 +43,7 @@
 
 
     <!-- Custom styles for this template -->
-    <link href="offcanvas.css" rel="stylesheet">
+    <link href="{{ asset('css/offcanvas.css') }}"  rel="stylesheet">
   </head>
   <body class="bg-light">
 
