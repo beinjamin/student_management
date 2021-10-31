@@ -78,16 +78,20 @@
 
 
   <div class="my-3 p-3 bg-body rounded shadow-sm">
-    <h6 class="border-bottom pb-2 mb-4">Liste Des Etudiants Inscrits</h6>
+    <h3 class="border-bottom pb-2 mb-4">Liste Des Etudiants Inscrits</h3>
 
-<div class="mt-2">
+<div class="mt-4">
+<div class="d-flex justify-content-end md-4">
+ <a hef="#" class="btn btn-primary">Ajouter un nouvel Etudiant</a>
+</div>
 <table class="table table-bordered table-hover ">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Identifiant</th>
+      <th scope="col">Nom</th>
+      <th scope="col">Prenom</th>
+      <th scope="col">Classe</th>
+       <th scope="col">Action</th>
     </tr>
   </thead>
   <tbody>
@@ -96,21 +100,18 @@
       <td>Mark</td>
       <td>Otto</td>
       <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
 
+    <td>
+       <a hef="#" class="btn btn-info">Modifiers</a>
+       <a hef="#" class="btn btn-danger">Supprimer</a>
+    </td>
+     </tr>
   </tbody>
 </table>
 
 <div>
  </div>
-
-
+ </div>
 </main>
 
 
