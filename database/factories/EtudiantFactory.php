@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 
 class EtudiantFactory extends Factory
 {
+
+    protected $model = Etudiant::class;
     /**
      * Define the model's default state.
      *
@@ -15,6 +17,10 @@ class EtudiantFactory extends Factory
     {
         return [
             //
+
+            'name' => $this->faker->lastName,
+            'prenom' => $this->faker->firstName,
+            'classe_id' => rand(1, 7),
         ];
     }
 }
