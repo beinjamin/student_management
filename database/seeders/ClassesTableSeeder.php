@@ -14,7 +14,7 @@ class ClassesTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table("classes")->inserts([
+        DB::table("classes")->insert([
             ["libelle" => "6eme"],
             ["libelle" => "4eme"],
             ["libelle" => "5eme"],
