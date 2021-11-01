@@ -31,9 +31,8 @@ class CreateEtudiantsTable extends Migration
      */
     public function down()
     {
-        Schema::table("etudiants",function(Blueprint $table){
-             $table->dropForeignId("class_id");
-
+        Schema::table("etudiants", function (Blueprint $table) {
+            $table->dropForeignId("class_id");
         });
         Schema::dropIfExists('etudiants');
     }
