@@ -15,8 +15,13 @@ class CreateEtudiantsTable extends Migration
     {
         Schema::create('etudiants', function (Blueprint $table) {
             $table->id();
+            $table->string("nom");
+            $table->string("prenom");
+            $table->foreignId("classe_id")->constrained("classes");
             $table->timestamps();
         });
+
+        schema::enableForeignKeyConstraints();
     }
 
     /**
@@ -26,6 +31,10 @@ class CreateEtudiantsTable extends Migration
      */
     public function down()
     {
+        Schema::table("etudiants",function(Blueprint $table){
+             $table->dropForeignId("class_id");
+
+        });
         Schema::dropIfExists('etudiants');
     }
 }
