@@ -16,11 +16,12 @@ class ClassesTableSeeder extends Seeder
     {
         DB::table("classes")->insert([
             ["libelle" => "6eme"],
-            ["libelle" => "4eme"],
             ["libelle" => "5eme"],
+            ["libelle" => "4eme"],
             ["libelle" => "3eme"],
             ["libelle" => "Séconde"],
             ["libelle" => "Premiere"],
+            ["libelle" => "Terminal"],
 
         ]);
     }
