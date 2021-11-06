@@ -32,7 +32,7 @@ class CreateEtudiantsTable extends Migration
     public function down()
     {
         Schema::table("etudiants", function (Blueprint $table) {
-            $table->dropForeignId("class_id");
+            $table->dropForeignId("classe_id");
         });
         Schema::dropIfExists('etudiants');
     }
