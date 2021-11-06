@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Etudiant;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class EtudiantFactory extends Factory
