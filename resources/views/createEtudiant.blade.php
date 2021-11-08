@@ -8,7 +8,7 @@
 
     <div class="mt-4">
 
-<form style="width: 65%,">
+<form style="width: 65%;" methode="post" action="{{rout('etudiant.ajouter')}}">
 
 
   <div class="mb-3">
@@ -19,7 +19,7 @@
 
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Prénom</label>
-    <input type="password" class="form-control">
+    <input type="text" class="form-control">
   </div>
 
 
@@ -33,7 +33,7 @@
     <select>
   </div>
   <button type="submit" class="btn btn-primary">Enregistrer</button>
-    <button type="{{ route('etudiant') }}" class="btn btn-primary">Annuler</button>
+  <a href="{{route('etudiant')}}" class="btn btn-danger">Annuler</a>
 
 </form>
     </div>
