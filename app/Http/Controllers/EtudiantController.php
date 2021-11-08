@@ -26,6 +26,11 @@ class EtudiantController extends Controller
             "classe_id" => "required"
         ]);
 
-        Etudiant::create($request->all());
+        Etudiant::create([
+            "nom" => $request->nom,
+            "prenom" => $request->prenom,
+            "classe_id" => $request->classe_id,
+        ]);
+        return back()->with("Success", "Etudiant Ajouteé Avec Succèè!!!");
     }
 }

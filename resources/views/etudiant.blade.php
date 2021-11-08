@@ -9,7 +9,7 @@
 <div class="mt-4">
 <div class="d-flex justify-content-between md-2">
 {{ $etudiants->links() }}
-<div> <a href="{{route('etudiant.create')}}" class="btn btn-primary ">Ajouter un nouvel Etudiant</a> </div>
+<div> <a href="{{route('etudiant.create')}}" class="btn btn-primary" >Ajouter un nouvel Etudiant</a> </div>
 </div>
 <table class="table table-bordered table-hover ">
   <thead>
