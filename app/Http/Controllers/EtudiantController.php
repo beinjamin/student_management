@@ -20,7 +20,7 @@ class EtudiantController extends Controller
     }
     public function store(Request $request)
     {
-        $request->validete([
+        $request->validate([
             "nom" => "required",
             "prenom" => "required",
             "classe_id" => "required"
