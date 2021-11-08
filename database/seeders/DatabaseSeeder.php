@@ -18,6 +18,6 @@ class DatabaseSeeder extends Seeder
 
 
         $this->call(ClassesTableSeeder::class);
-        Etudiant::factory(100)->create();
+        Etudiant::factory(30)->create();
     }
 }

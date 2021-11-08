@@ -26,7 +26,7 @@
 
 
       <th scope="row">{{ $etudiant->id }}</th>
-      <td>{{ $etudiant->nom }}</td>
+      <td>{{ $etudiant->name }}</td>
       <td>{{ $etudiant->prenom }}</td>
       <td>{{ $etudiant->classe }}</td>
 
