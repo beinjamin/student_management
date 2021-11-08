@@ -18,4 +18,12 @@ class EtudiantController extends Controller
         $classes = Classe::all();
         return view("createEtudiant", compact("classes"));
     }
+    public function store(Request $request)
+    {
+        $request->validete([
+            "nom" => "required",
+            "prenom" => "required",
+            "classe_id" => "required"
+        ]);
+    }
 }
