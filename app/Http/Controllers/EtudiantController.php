@@ -9,7 +9,7 @@ class EtudiantController extends Controller
 {
     public function index()
     {
-        $etudiants = Etudiant::orderBy("nom", "asc")->get();
+        $etudiants = Etudiant::orderBy("nom", "asc")->paginate(5);
         return view("etudiant", compact("etudiants"));
     }
 }
