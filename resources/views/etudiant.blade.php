@@ -7,8 +7,9 @@
     <h3 class="border-bottom pb-2 mb-4">Liste Des Etudiants Inscrits</h3>
 
 <div class="mt-4">
-<div class="d-flex justify-content-end md-4">
- <a hef="#" class="btn btn-primary">Ajouter un nouvel Etudiant</a>
+<div class="d-flex justify-content-between md-2">
+{{ $etudiants->links() }}
+<div> <a hef="#" class="btn btn-primary ">Ajouter un nouvel Etudiant</a> </div>
 </div>
 <table class="table table-bordered table-hover ">
   <thead>
@@ -26,7 +27,7 @@
 
 
       <th scope="row">{{ $loop->index }}</th>
-      <td>{{ $etudiant->name }}</td>
+      <td>{{ $etudiant->nom }}</td>
       <td>{{ $etudiant->prenom }}</td>
       <td>{{ $etudiant->classe->libelle }}</td>
 
@@ -37,7 +38,7 @@
      </tr>
   @endforeach
   </tbody>
-  {{ $etudiants->links() }}
+
 </table>
 
 
