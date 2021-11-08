@@ -8,9 +8,9 @@
 
     <div class="mt-4">
 
-<form>
+<form style="width: 65%,">
 
-@csrf
+
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nom de l'etudiant</label>
     <input type="text" class="form-control" >
@@ -32,7 +32,9 @@
     @endforeach
     <select>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">Enregistrer</button>
+    <button type="{{ route('etudiant') }}" class="btn btn-primary">Annuler</button>
+
 </form>
     </div>
     </div>
