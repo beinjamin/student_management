@@ -10,6 +10,6 @@ class Etudiant extends Model
     use HasFactory;
     public function classe()
     {
-        $this->hasOne(Classe::class);
+        return  $this->belongsTo(Classe::class);
     }
 }

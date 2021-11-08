@@ -25,10 +25,10 @@
     @foreach ($etudiants as $etudiant )
 
 
-      <th scope="row">{{ $etudiant->id }}</th>
+      <th scope="row">{{ $loop->index }}</th>
       <td>{{ $etudiant->name }}</td>
       <td>{{ $etudiant->prenom }}</td>
-      <td>{{ $etudiant->classe }}</td>
+      <td>{{ $etudiant->classe->libelle }}</td>
 
     <td>
        <a hef="#" class="btn btn-info">Modifiers</a>
@@ -39,7 +39,7 @@
   </tbody>
 </table>
 
-<div>
+
  </div>
  </div>
 
