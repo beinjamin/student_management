@@ -19,7 +19,7 @@ class EtudiantFactory extends Factory
         return [
             //
 
-            'name' => $this->faker->lastName,
+            'nom' => $this->faker->lastName,
             'prenom' => $this->faker->firstName,
             'classe_id' => rand(1, 7),
         ];
