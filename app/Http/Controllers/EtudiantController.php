@@ -15,7 +15,7 @@ class EtudiantController extends Controller
     }
     public function create()
     {
-        $classes= Classe::all()
+        $etudiants = Classe::all();
         return view("createEtudiant", compact("classes"));
     }
 }
