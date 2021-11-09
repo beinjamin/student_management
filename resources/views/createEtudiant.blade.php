@@ -26,14 +26,14 @@
 
 
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Nom de l'etudiant</label>
-    <input type="text" class="form-control" >
+    <label for="exampleInputEmail1"  class="form-label">Nom de l'etudiant</label>
+    <input type="text"  class="form-control" required>
   </div>
 
 
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Prénom</label>
-    <input type="text" class="form-control">
+    <input type="text" class="form-control" required>
   </div>
 
 
