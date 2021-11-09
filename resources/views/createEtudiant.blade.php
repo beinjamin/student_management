@@ -7,6 +7,9 @@
     <h3 class="border-bottom pb-2 mb-4">Ajout d'un nouvel Etudiant</h3>
 
     <div class="mt-4">
+    @if(session->has("success"))
+        {{success->get('success')}}
+    @endif
 
     @if($errors->any())
      <div class="alert alert-danger">
@@ -27,19 +30,19 @@
 
   <div class="mb-3">
     <label for="exampleInputEmail1"  class="form-label">Nom de l'etudiant</label>
-    <input type="text"  class="form-control" required>
+    <input type="text"  class="form-control" name="nom">
   </div>
 
 
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Prénom</label>
-    <input type="text" class="form-control" required>
+    <input type="text" class="form-control" name="prenom">
   </div>
 
 
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Classe</label>
-    <select class="form-control">
+    <select class="form-control" name="classe_id">
     <option value=""></option>
     @foreach ($classes as $classe )
     <option value="{{$classe->id}}">{{$classe->libelle}} </option>

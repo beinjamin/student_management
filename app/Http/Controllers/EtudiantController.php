@@ -6,6 +6,7 @@ use App\Models\Classe;
 use App\Models\Etudiant;
 use Illuminate\Http\Request;
 
+
 class EtudiantController extends Controller
 {
     public function index()
