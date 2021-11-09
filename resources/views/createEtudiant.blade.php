@@ -7,8 +7,17 @@
     <h3 class="border-bottom pb-2 mb-4">Ajout d'un nouvel Etudiant</h3>
 
     <div class="mt-4">
+    <ul>
+    @foreach ($errors as $error )
+    <li>{{ $erro }}
+        
+    @endforeach
 
-<form style="width: 65%;" methode="post" action="{{rout('etudiant.ajouter')}}">
+    </ul>
+
+<form style="width: 65%;" methode="post" action="{{route('etudiant.ajouter')}}">
+
+  @csrf
 
 
   <div class="mb-3">
