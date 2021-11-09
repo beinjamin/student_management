@@ -7,7 +7,7 @@
     <h3 class="border-bottom pb-2 mb-4">Ajout d'un nouvel Etudiant</h3>
 
     <div class="mt-4">
-    @if(session->has("success"))
+    @if(session()->has("success"))
         {{success->get('success')}}
     @endif
 
