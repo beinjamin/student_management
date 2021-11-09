@@ -8,9 +8,9 @@
 
     <div class="mt-4">
     <ul>
-    @foreach ($errors as $error )
-    <li>{{ $erro }}
-        
+    @foreach ($errors->all() as $error )
+    <li>{{ $error }}</li>
+
     @endforeach
 
     </ul>
