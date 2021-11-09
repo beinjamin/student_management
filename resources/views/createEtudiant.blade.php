@@ -7,13 +7,18 @@
     <h3 class="border-bottom pb-2 mb-4">Ajout d'un nouvel Etudiant</h3>
 
     <div class="mt-4">
-    <ul>
-    @foreach ($errors->all() as $error )
-    <li>{{ $error }}</li>
 
-    @endforeach
+    @if($errors->any())
+     <div class="alert alert-danger">
+     <ul>
+            @foreach ($errors->all() as $error )
+             <li>{{ $error }}</li>
+
+            @endforeach
 
     </ul>
+    </div>
+    @endif
 
 <form style="width: 65%;" methode="post" action="{{route('etudiant.ajouter')}}">
 
