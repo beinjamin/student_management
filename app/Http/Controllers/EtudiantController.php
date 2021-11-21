@@ -14,11 +14,20 @@ class EtudiantController extends Controller
         $etudiants = Etudiant::orderBy("nom", "asc")->paginate(5);
         return view("etudiant", compact("etudiants"));
     }
+
+
+
+
+
     public function create()
     {
         $classes = Classe::all();
         return view("createEtudiant", compact("classes"));
     }
+
+
+
+
     public function store(Request $request)
     {
         $request->validate([
