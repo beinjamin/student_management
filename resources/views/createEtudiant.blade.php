@@ -22,7 +22,7 @@
     </ul>
     </div>
     @endif
-
+<div class="mt-4">
 <form style="width: 65%;" methode="post" action="{{route('etudiant.ajouter')}}">
 
   @csrf
